@@ -66,8 +66,10 @@ const renderActiveNote = () => {
   }
 };
 
+// saves a new note using the values in Title and Text fields. Needs a method of creating an id.
 const handleNoteSave = () => {
   const newNote = {
+    // id: uniqid(),
     title: noteTitle.value,
     text: noteText.value,
   };
@@ -108,6 +110,7 @@ const handleNewNoteView = (e) => {
   renderActiveNote();
 };
 
+// displays the save note button if title and body are not blank
 const handleRenderSaveBtn = () => {
   if (!noteTitle.value.trim() || !noteText.value.trim()) {
     hide(saveNoteBtn);
@@ -180,4 +183,5 @@ if (window.location.pathname === '/notes') {
   noteText.addEventListener('keyup', handleRenderSaveBtn);
 }
 
+// Runs getNotes() and renderNoteList in sequence on the load of notes.html
 getAndRenderNotes();

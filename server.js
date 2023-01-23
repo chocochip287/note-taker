@@ -25,7 +25,6 @@ const PORT = 6505;
 // app.use(express.json);
 
 app.use(express.static("./Develop/public"));
-app.use(express.static("./Develop/db"));
 
 // Routes
 
@@ -43,7 +42,6 @@ app.get("/notes", (req, res) => {
 
 app.get("/api/notes", (req, res) => {
     res.json(data);
-    // console.log(data);
 })
 
 // Note POST route
