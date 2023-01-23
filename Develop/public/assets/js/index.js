@@ -3,8 +3,6 @@ let noteText;
 let saveNoteBtn;
 let newNoteBtn;
 let noteList;
-// Imports uniqid for ID generation on posts - ID generator method is uniqid();
-const uniquid = require("uniqid");
 
 if (window.location.pathname === '/notes') {
   noteTitle = document.querySelector('.note-title');
