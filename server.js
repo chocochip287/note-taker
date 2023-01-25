@@ -14,7 +14,7 @@ const express = require("express");
 const path = require("path");
 const data = require("./Develop/db/db.json");
 // Port number
-const PORT = 6505;
+const PORT = process.env.PORT || 6505;
 const fs = require("fs");
 // generates unique ID values
 const uniqid = require("uniqid");
