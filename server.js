@@ -5,6 +5,7 @@ To Do:
 
 Future scoping:
 * Maybe some style stuff? This one is pretty open and shut since the front end was pre-written.
+* I want to know why my console.log at the end of the POST route isn't working when the one in my DELETE route is. Not important for MVP but I'm curious/annoyed.
 
 */
 
@@ -21,14 +22,15 @@ const uniqid = require("uniqid");
 // Web server object
 const app = express();
 
+// Middleware
+
 // Setup for data parsing
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Middleware
 app.use(express.static("./Develop/public"));
 
-// Variable to allow manipulation of db.json for the delete route.
+// Variable to allow manipulation of db.json for the delete and post routes.
 
 let shadowData = data;
 
