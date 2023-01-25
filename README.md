@@ -26,7 +26,7 @@ Saved notes can be accessed by clicking on their title on the left hand side of 
 
 When finished, be sure to press ctrl or command+C in your terminal to close the open server instance.
 
-The page can also be accessed via Heroku at [link goes here].
+The page can also be accessed via Heroku [here](https://arcane-depths-93155.herokuapp.com/).
 
 ![The screen shows a picture of the main page.](./Develop/images/note-taker.png)
 
