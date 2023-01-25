@@ -66,10 +66,9 @@ const renderActiveNote = () => {
   }
 };
 
-// saves a new note using the values in Title and Text fields. Needs a method of creating an id.
+// saves a new note using the values in Title and Text fields
 const handleNoteSave = () => {
   const newNote = {
-    // id: uniqid(),
     title: noteTitle.value,
     text: noteText.value,
   };
